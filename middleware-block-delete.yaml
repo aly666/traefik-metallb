@@ -1,0 +1,12 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: allow-methods
+  namespace: default
+spec:
+  method:
+    methods:
+      - GET
+      - POST
+      - PUT
+      - OPTIONS

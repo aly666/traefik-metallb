@@ -1,0 +1,20 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: cors-middleware
+  namespace: default
+spec:
+  headers:
+    accessControlAllowOriginList:
+      - "https://app.sutrisno.xyz"  # domain yang diizinkan
+      - "http://127.0.0.1:5500"
+    accessControlAllowMethods:
+      - "DELETE"
+      - "OPTIONS"
+    accessControlAllowHeaders:
+      - "Content-Type"
+      - "Authorization"
+      - "X-Requested-With"
+    accessControlAllowCredentials: true
+    addVaryHeader: true
+

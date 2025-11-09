@@ -1,0 +1,18 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: go-pasien-ingress
+  namespace: default
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`app.sutrisno.xyz`) && PathPrefix(`/api/pasien`) && Method(`GET|POST|PUT|OPTIONS`)
+      kind: Rule
+      middlewares:
+        - name: cors-middleware
+          namespace: default
+      services:
+        - name: go-pasien-service
+          port: 80
+

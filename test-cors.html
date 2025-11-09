@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Simple CORS DELETE Test</title></head>
+<body>
+  <button id="test">Send DELETE Request</button>
+  <pre id="result"></pre>
+
+  <script>
+    document.getElementById('test').onclick = () => {
+      fetch('http://app.sutrisno.xyz/api/pasien?id=12', {
+        method: 'DELETE',
+        mode: 'cors',
+        credentials: 'include',
+        headers: { 'Content-Type': 'application/json' }
+      })
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+      })
+      .catch(err => {
+        document.getElementById('result').textContent = 'Error: ' + err;
+      });
+    };
+  </script>
+</body>
+</html>
+
