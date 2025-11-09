@@ -9,12 +9,15 @@ spec:
       - "https://app.sutrisno.xyz"  # domain yang diizinkan
       - "http://127.0.0.1:5500"
     accessControlAllowMethods:
-      - "DELETE"
-      - "OPTIONS"
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - OPTIONS
     accessControlAllowHeaders:
-      - "Content-Type"
-      - "Authorization"
-      - "X-Requested-With"
+      - Content-Type
+      - Authorization
+      - X-Requested-With
     accessControlAllowCredentials: true
     addVaryHeader: true
 
