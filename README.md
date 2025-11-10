@@ -1,4 +1,4 @@
-[Logo](images/diagram flow.png)
+![Diagram Flow](images/diagram%20flow.png)
 
 # Deploy Go API dengan Traefik IngressRoute dan Middleware CORS
 
