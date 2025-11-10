@@ -1,7 +1,7 @@
 # Project Traefik-MetalLB
 
 <p align="center">
-  <img src="images/diagram-flow.png" alt="Diagram Flow" width="400" />
+  <img src="images/diagram.png" alt="Diagram" width="400" />
 </p>
 
 # Deploy Go API dengan Traefik IngressRoute dan Middleware CORS
