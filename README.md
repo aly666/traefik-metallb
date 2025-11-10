@@ -1,6 +1,4 @@
-# traefik-metallb
-
-Berikut diagram flow:
+# Project Traefik-MetalLB
 
 <p align="center">
   <img src="images/diagram-flow.png" alt="Diagram Flow" width="400" />
