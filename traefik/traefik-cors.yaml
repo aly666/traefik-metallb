@@ -12,7 +12,6 @@ spec:
       - GET
       - POST
       - PUT
-      - DELETE
       - OPTIONS
     accessControlAllowHeaders:
       - Content-Type
