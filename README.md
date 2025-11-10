@@ -1,4 +1,10 @@
-![Diagram Flow](images/diagram%20flow.png)
+# Project Saya
+
+Berikut diagram flow:
+
+<p align="center">
+  <img src="images/diagram%20flow.png" alt="Diagram Flow" width="400" />
+</p>
 
 # Deploy Go API dengan Traefik IngressRoute dan Middleware CORS
 
